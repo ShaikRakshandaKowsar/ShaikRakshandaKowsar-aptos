@@ -1,0 +1,18 @@
+const issueCredential = async () => {
+  if (!walletAddress || !credential) return;
+
+  try {
+    const payload = {
+      type: "entry_function_payload",
+      function: "0x0cbdea4ae82301a4be64ee8143013bc42969a7d9a1bc1377e9f1b98ed9cd1d64>::identity_wallet::issue_credential", // replace
+      type_arguments: [],
+      arguments: [walletAddress, credential],
+    };
+
+    const tx = await window.aptos.signAndSubmitTransaction(payload);
+    setStatus(`✅ Credential issued! Tx Hash: ${tx.hash}`);
+  } catch (error) {
+    console.error(error);
+    setStatus("❌ Failed to issue credential.");
+  }
+};

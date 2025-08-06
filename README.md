@@ -91,5 +91,3 @@ We aim to create a future where digital identity is portable, secure, and puts u
 ## Contract Details
 
 0x2072db29b5a05f49ab3295d54d4ab7f58b8a8bd170875d8e3993ba8c9c7506f9
-
-<img width="1889" height="899" alt="Screenshot 2025-08-06 220904" src="https://github.com/user-attachments/assets/c282449a-2b14-4c4d-a93e-ed864bd78b49" />
